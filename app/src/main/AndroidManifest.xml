@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Chalan"
         tools:targetApi="31">
         <activity
+            android:name=".Lista_Chalan"
+            android:exported="false" />
+        <activity
+            android:name=".Lista_Proyectos"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Usuario"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Chalan"
+            android:exported="false" />
+        <activity
+            android:name=".Crear_Proyecto"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Usuario"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Chalan"
+            android:exported="false" />
+        <activity
+            android:name=".Crear_Cuenta"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

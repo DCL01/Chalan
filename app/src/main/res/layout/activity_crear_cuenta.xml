@@ -30,16 +30,28 @@
         android:inputType="textPassword"
         android:padding="16dp" />
 
-    <Button
-        android:id="@+id/loginButton"
+    <EditText
+        android:id="@+id/password2EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/iniciar_sesion" />
+        android:background="#ffffff"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
 
     <Button
         android:id="@+id/CreateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/crear_cuenta" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar a Iniciar sesion" />
+
+
 
 </LinearLayout>

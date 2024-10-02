@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fca508"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/challan_logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Crear_Page_Button"
+            android:layout_width="190dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:text="@string/crear_proyecto" />
+
+        <Button
+            android:id="@+id/Ver_Challan_Page_Button"
+            android:layout_width="190dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:text="@string/challanes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Ver_Proyectos_button"
+            android:layout_width="190dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:text="@string/ver_proyectos" />
+
+        <Button
+            android:id="@+id/Editar_Perfil_Chalan_button"
+            android:layout_width="190dp"
+            android:layout_height="93dp"
+            android:layout_gravity="center"
+            android:text="Editar perfil" />
+    </LinearLayout>
+
+</LinearLayout>

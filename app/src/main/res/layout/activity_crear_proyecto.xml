@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fca508">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Proyecto"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNombreProyecto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del proyecto"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Medidas"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextAncho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ancho (cm)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextLargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Largo (cm)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextAlto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alto (cm)"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Descripción"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe tu proyecto"
+            android:inputType="textMultiLine"
+            android:lines="4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fotos"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomar Foto" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonCrearProyecto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Crear Proyecto" />
+
+    </LinearLayout>
+
+</ScrollView>
