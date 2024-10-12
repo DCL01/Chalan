@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#fca508"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#4B0082">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,94 +11,118 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Información de Contacto -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Información de Contacto"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/editTextNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Usuario"
-            android:background="#ffffff"
-            android:inputType="textPersonName" />
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/editTextTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Teléfono"
-            android:background="#ffffff"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
+        <EditText
+            android:id="@+id/editTextDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Correo Electrónico -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Correo Electrónico"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/editTextCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Correo electrónico"
-            android:background="#ffffff"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Contraseña -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Honorarios"
+            android:text="Contraseña"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
 
         <EditText
-            android:id="@+id/editTextHonorarios"
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Honorarios Mano de obra"
-            android:background="#ffffff"
-            android:inputType="textEmailAddress" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Contrasena"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:background="@color/white"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
         <EditText
-            android:id="@+id/editTextHonorarios"
+            android:id="@+id/editTextPasswordConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contrasena"
-            android:background="#ffffff"
-            android:inputType="textEmailAddress" />
+            android:background="@color/white"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:id="@+id/editTextHonorarios"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Contrasena"
-            android:background="#ffffff"
-            android:inputType="textEmailAddress" />
-
-
+        <!-- Botón Guardar Cambios -->
         <Button
             android:id="@+id/buttonGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Guardar Cambios" />
-
+            android:backgroundTint="#FF8C00"
+            android:textColor="#FFFFFF"
+            android:text="Guardar Cambios"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
-
 </ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B0082">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Estimaciones"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Lista de Productos -->
+        <LinearLayout
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Ejemplo de un Producto -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Producto 1"
+                    android:background="@color/white"
+                    android:textColor="#000000"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="ID"
+                    android:inputType="text"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#757575"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#757575"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="$0.00"
+                    android:background="@color/white"
+                    android:textColor="#757575"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Añadir más productos aquí -->
+
+        </LinearLayout>
+
+        <!-- Botón para Agregar Producto -->
+        <Button
+            android:id="@+id/buttonAgregarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF8C00"
+            android:textColor="#FFFFFF"
+            android:text="Agregar Producto"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para Calcular -->
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6A5ACD"
+            android:textColor="#FFFFFF"
+            android:text="Calcular"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para Regresar al Menú Home -->
+        <Button
+            android:id="@+id/buttonRegresarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6A5ACD"
+            android:textColor="#FFFFFF"
+            android:text="Regresar al Menú Home"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

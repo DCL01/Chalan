@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fca508">
+    android:background="#4B0082">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,88 +11,134 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Título -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Crear Proyecto"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Nombre del Proyecto -->
         <EditText
             android:id="@+id/editTextNombreProyecto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Nombre del proyecto"
-            android:inputType="text" />
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Medidas -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Medidas"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/editTextAncho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Ancho (cm)"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/editTextLargo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Largo (cm)"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/editTextAlto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Alto (cm)"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Descripción -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Descripción"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/editTextDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:hint="Describe tu proyecto"
             android:inputType="textMultiLine"
-            android:lines="4" />
+            android:lines="4"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Fotos -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Fotos"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
 
         <Button
             android:id="@+id/buttonTomarFoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tomar Foto" />
+            android:backgroundTint="#FF8C00"
+            android:textColor="#FFFFFF"
+            android:text="Tomar Foto"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewFotos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+        <!-- Crear Proyecto -->
         <Button
             android:id="@+id/buttonCrearProyecto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Crear Proyecto" />
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"
+            android:text="Crear Proyecto"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Regresar al Menú Home -->
+        <Button
+            android:id="@+id/buttonRegresarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#800080"
+            android:textColor="#FFFFFF"
+            android:text="Regresar al Menú Home"
+            android:padding="16dp" />
     </LinearLayout>
-
 </ScrollView>

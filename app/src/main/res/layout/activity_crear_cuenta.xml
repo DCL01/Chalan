@@ -1,57 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fca508"
+    android:background="#4B0082"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Logo -->
     <ImageView
         android:id="@+id/myImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_gravity="center"
-        android:src="@drawable/challan_logo" />
+        android:src="@drawable/challan_logo"
+        android:layout_marginBottom="24dp" />
 
+    <!-- Username Input -->
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:hint="@string/usuario"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Password Input -->
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:hint="@string/contrasena"
         android:inputType="textPassword"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Confirm Password Input -->
     <EditText
         android:id="@+id/password2EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:hint="@string/contrasena"
         android:inputType="textPassword"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:layout_marginBottom="24dp" />
 
-
+    <!-- Create Account Button -->
     <Button
         android:id="@+id/CreateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crear_cuenta" />
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:text="@string/crear_cuenta"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Back to Login Button -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Regresar a Iniciar sesion" />
-
-
-
+        android:backgroundTint="#800080"
+        android:textColor="#FFFFFF"
+        android:text="Regresar Inicio de Sesión"
+        android:padding="16dp" />
 </LinearLayout>

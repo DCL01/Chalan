@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4B0082"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulta a la IA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Área de Chat -->
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#5D527F"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/chatLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Campo de Entrada y Botón de Envío -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextConsulta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5D527F"
+            android:hint="Escribe tu pregunta aquí..."
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonEnviarConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF8C00"
+            android:textColor="#FFFFFF"
+            android:text="Enviar"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- Botón para Regresar al Menú Home -->
+    <Button
+        android:id="@+id/buttonRegresarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#800080"
+        android:textColor="#FFFFFF"
+        android:text="Regresar al Menú Home"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
